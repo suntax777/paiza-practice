@@ -51,3 +51,21 @@ reader.on('line', (line) => {
 reader.on('close', () => {
     var perKiroProtein = 1500
   console.log(lines[0] * perKiroProtein);
+
+//D162:【推しプロコラボ問題】お米の重さ
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+// 自分の得意な言語で
+// Let's チャレンジ！！
+var lines = [];
+var reader = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+reader.on('line', (line) => {
+  lines.push(line);
+});
+reader.on('close', () => {
+  const go = 150
+  console.log(lines[0] * go);
+});
