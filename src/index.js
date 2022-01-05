@@ -69,3 +69,26 @@ reader.on('close', () => {
   const go = 150
   console.log(lines[0] * go);
 });
+
+//paizaラーニング　C099:折り紙の貼り合わせ
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+// 自分の得意な言語で
+// Let's チャレンジ！！
+var lines = [];
+var value = [];
+var reader = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+reader.on('line', (line) => {
+  lines.push(line);
+});
+console.log(lines);
+reader.on('close', () => {
+  console.log(lines[0] * go);
+});
+value = lines[0].split(" ")
+//console.log(value)
+var totalArea = Number(value[0]) * Number(value[1])
+//console.log(totalArea)
