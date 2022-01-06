@@ -92,4 +92,8 @@ reader.on('close', () => {
   value = lines[0].split(' ');
   //console.log(value);
   //console.log(lines);
+  count = Number(value[0]);
+  width = Number(value[1]);
+  area = count * width;
+  console.log(area);
 });
