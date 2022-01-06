@@ -84,11 +84,12 @@ var reader = require('readline').createInterface({
 reader.on('line', (line) => {
   lines.push(line);
 });
-console.log(lines);
+
 reader.on('close', () => {
-  console.log(lines[0] * go);
+    var value = []
+  //console.log(lines);
+  //lines.split(' ');
+  value = lines[0].split(' ');
+  //console.log(value);
+  //console.log(lines);
 });
-value = lines[0].split(" ")
-//console.log(value)
-var totalArea = Number(value[0]) * Number(value[1])
-//console.log(totalArea)
