@@ -94,6 +94,9 @@ reader.on('close', () => {
   //console.log(lines);
   count = Number(value[0]);
   width = Number(value[1]);
-  area = count * width;
+
+  length = width + width / 2 + width - width / 2 / 2
+  //console.log(length)
+  area = width * length;
   console.log(area);
 });
